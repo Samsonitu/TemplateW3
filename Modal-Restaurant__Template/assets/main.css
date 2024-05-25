@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button,input {
+    font: inherit;
+    border: none;
+}
+
+.btn {
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+.display-container {
+    position: relative;
+}
+
+.display-topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.display-topright {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.display-bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.container {
+    padding: 0.01rem 16px;
+}
+
+.container::before ,.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.hover-opacity:hover {
+    opacity: 0.6;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%; 
+    z-index: 3;
+    padding-top: 100px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 0;
+    outline: 0;
+    position: relative;
+    animation: animatezoom 0.6s;
+}
+
+@media (min-width: 993px ) {
+    .modal-content {
+        width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 500px;
+    }
+}
+
+@media (max-width:600px) {
+    .modal-content {
+        margin: 0 10px;
+        width: auto;
+    }
+}
+
+@keyframes animatezoom {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+#contact .modal-content input {
+    width: 100%;
+    display: block;
+    padding: 16px 8px;
+    border: 1px solid #ccc;
+}
+
+#contact .modal-content button {
+    background: #fff;
+    padding: 8px 16px;
+}
+
+#contact .modal-content button:hover {
+    background-color: #ccc;
+}
+

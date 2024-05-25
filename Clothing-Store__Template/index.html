@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="aseets/css/main.css">
+    <link rel="stylesheet" href="aseets/css/grid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="aseets/fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        html,body {
+            line-height: 1.5;
+            font-size: 15px;
+        }
+
+        a {font-family: "Roboto", sans-serif}
+        body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+        h1,h2,h3,h4,h5,h6 {margin: 10px 0; font-weight: 400;}
+        
+        h1 {font-size: 36px;} h2{font-size: 30px;} h4{font-size: 20px;}
+
+        p{margin: 15px 0;}
+
+    </style>
+</head>
+<body>
+    <div id="mySidebar" class="side-bar">
+        <div style="padding: 16px">
+            <h3 class="logo__text">LOGO</h3>
+        </div>
+        <div class="category__list">
+            <a href="#" class="btn category__items">Shirts</a>
+            <a href="#" class="btn category__items">Dresses</a>
+        
+            <a id="myBtn" onclick="myAccFunc()" href="javascript:void(0)" class="btn category__items category__items-selected">
+                Jeans
+                <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <div id="demoAcc" class="category__sub-list">
+                <a href="#" class="btn category__sub-items category__sub-items-selected">
+                    <i class="fa-solid fa-caret-right "></i> Skinny
+                </a>
+                <a href="#" class="btn category__sub-items">Relaxed</a>
+                <a href="#" class="btn category__sub-items">Bootcut</a>
+                <a href="#" class="btn category__sub-items">Straight</a>
+            </div>
+            <a href="#" class="btn category__items">Jackets</a>
+            <a href="#" class="btn category__items">Gymwear</a>
+            <a href="#" class="btn category__items">Blazers</a>
+            <a href="#" class="btn category__items">Shoes</a>
+        </div>
+
+        <div class="nav__footer">
+            <a href="#">Contact</a>
+
+            <a onclick="document.getElementById('newsletter').style.display='block'" href="javascript:void(0)">Newseltter</a>
+
+            <a href="#">Subscribe</a>
+        </div>
+    </div>
+
+    <div id="newsletter" class="modal">
+        <div class="modal-container">
+            <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove right remove-btn"></i>
+            <h2 style="letter-spacing: 4px;">NEWSLETTER</h2>
+            <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+            <p><input type="email" placeholder="Enter e-mail"></p>
+            <button style="padding: 12px 24px;" class="btn-subscribe" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+        </div>
+    </div>        
+
+    <div id="myOverlay" style="cursor: pointer; display: none;" title="close side menu" onclick="w3_close()" class="overplay hidden-large-screen"></div>
+
+    <div class="nav">
+        <div style="letter-spacing: 4px;" class="logo-on-small-screen">LOGO</div>
+        <a href="javascript:void(0)" class="menu-on-small-screen right" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+
+    <div class="main">
+        <div class="header container">
+            <p style="margin: 24px 0;" class="left">Jeans</p>
+            <p style="margin: 24px 0;" class="right">
+                <i class="fa-solid fa-cart-shopping" style="margin-right: 16px"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </p>
+        </div>
+
+        <div class="container display-container">
+            <img src="aseets/img/jeans.jpg" width="100%" alt="Jeans">
+            <div class="display-topleft" style="padding: 24px 48px; color: #fff;">
+                <h1 style="font-size: 64px;" class="hidden-small-screen">New arrivals</h1>
+                <h1 class="hidden-large-screen">New arrivals</h1>
+                <h1 class="hidden-small-screen">COLLECTION 2016</h1>
+                <p><button class="btn-shop">SHOP NOW</button></p>
+            </div>
+        </div>
+        <p class="text-grey container">8 items</p>
+
+        <div class="row gray-scale">
+            <div class="col-large l-3 c-6">
+                <div class="display-container">
+                    <img width="100%" src="aseets/img/jeans1.jpg" alt="jean1">
+                </div>
+                <p>
+                    Ripped Skinny Jeans
+                    <br>
+                    <b>$24.99</b>
+                </p>
+            </div>
+            <div class="col-large l-3 c-6">
+                <div class="display-container">
+                    <div class="display-middle display-hover">
+                        <button class="buy-now-btn">Buy now
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                    <span class="tag display-topleft">New</span>
+                    <img width="100%" src="aseets/img/jeans2.jpg" alt="jean2">
+                </div>
+                <p>
+                    Mega Ripped Jeans
+                    <br>
+                    <b>$19.99</b>
+                </p>
+            </div>
+            <div class="col-large l-3 c-6">
+                <div class="display-container">
+                    <img width="100%" src="aseets/img/jeans3.jpg" alt="jean3">
+                </div>
+                <p>
+                    Washed Skinny Jeans
+                    <br>
+                    <b>$20.50</b>
+                </p>
+            </div>
+            <div class="col-large l-3 c-6">
+                <div class="display-container">
+                    <img width="100%" src="aseets/img/jeans4.jpg" alt="jean4">
+                </div>
+                <p>
+                    Vintage Skinny Jeans
+                    <br>
+                    <b>$14.99</b>
+                </p>
+            </div>
+        </div>
+        <div class="row gray-scale">
+            <div class="col-large l-3 c-6">
+                <div class="display-container">
+                    <img width="100%" src="aseets/img/jeans2.jpg" alt="jean2">
+                </div>
+                <p>
+                    Mega Ripped Jeans
+                    <br>
+                    <b>$19.99</b>
+                </p>
+            </div>
+            <div class="col-large l-3 c-6">
+                <div class="display-container">
+                    <img width="100%" src="aseets/img/jeans3.jpg" alt="jean3">
+                </div>
+                <p>
+                    Washed Skinny Jeans
+                    <br>
+                    <b>$20.50</b>
+                </p>
+            </div>
+            <div class="col-large l-3 c-6">
+                <div class="display-container">
+                    <div class="display-middle display-hover">
+                        <button class="buy-now-btn">Buy now
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                    <span class="tag display-topleft">New</span>
+                    <img width="100%" src="aseets/img/jeans4.jpg" alt="jean4">
+                </div>
+                <p>
+                    Vintage Skinny Jeans
+                    <br>
+                    <b style="color: red;">$14.99</b>
+                </p>
+            </div>
+            <div class="col-large l-3 c-6">
+                <div class="display-container">
+                    <img width="100%" src="aseets/img/jeans1.jpg" alt="jean1">
+                    
+                </div>
+                <p>
+                    Ripped Skinny Jeans
+                    <br>
+                    <b>$24.99</b>
+                </p>
+            </div>
+        </div>
+
+        <div class="subscribe__selection">
+            <h1>Subscribe</h1>
+            <p>To get special offers and VIP treatment:</p>
+            <p><input type="email" placeholder="Enter e-email"></p>
+            <p><button class="btn-subscribe">Subscribe</button></p>
+        </div>
+
+        <div class="contact__selection">
+            <div class="row" style="padding: 0 8px;">
+                <div class="col-small l-4 c-12">
+                    <h4>Contact</h4>
+                    <p>Questions? Go ahead.</p>
+                    <form action="">
+                        <p><input type="text" placeholder="Name" required name="text"></p>
+                        <p><input type="email" placeholder="Email" required name="email"></p>
+                        <p><input type="text" placeholder="Subject" required name="subject"></p>
+                        <p><input type="text" placeholder="Message" required name="nessage"></p>
+                        <p>
+                            <button style="background-color: #000; width: 100%;" class="btn">Send</button>
+                        </p>
+                    </form>
+                </div>
+                <div class="col-small l-4 c-6">
+                    <h4>About</h4>
+                    <p><a class="text-black" href="#">About us</a></p>
+                    <p><a class="text-black" href="#">We're hiring</a></p>
+                    <p><a class="text-black" href="#">Support</a></p>
+                    <p><a class="text-black" href="#">Find store</a></p>
+                    <p><a class="text-black" href="#">Shipment</a></p>
+                    <p><a class="text-black" href="#">Payment</a></p>
+                    <p><a class="text-black" href="#">Gift card</a></p>
+                    <p><a class="text-black" href="#">Return</a></p>
+                    <p><a class="text-black" href="#">Help</a></p>
+                </div>
+                <div class="col-small l-4 c-6 justify">
+                    <h4>Store</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Company Name</p>
+                    <p><i class="fa-solid fa-phone"></i> 0044123123</p>
+                    <p><i class="fa-solid fa-envelope"></i> ex@mail.com</p>
+                    <h4>We accept</h4>
+                    <p><i class="fa-brands fa-cc-amex"></i> Amex</p>
+                    <p><i class="fa-regular fa-credit-card"></i> Credit Card</p>
+                    <br>
+                    <p style="font-size: 18px;">
+                        <i class="socials-icon fa-brands fa-square-facebook"></i>
+                        <i class="socials-icon fa-brands fa-instagram"></i>
+                        <i class="socials-icon fa-brands fa-snapchat"></i>
+                        <i class="socials-icon fa-brands fa-pinterest-p"></i>
+                        <i class="socials-icon fa-brands fa-twitter"></i>
+                        <i class="socials-icon fa-brands fa-linkedin-in"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Powered by <a style="color: #fff;" href="#">w3.css</a></p>
+        </div>
+    </div>
+    
+    <script>
+    // Accordion 
+    function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("show") == -1) {
+        x.className += " show";
+    } else {
+        x.className = x.className.replace(" show", "");
+    }
+    }
+
+    // Click on the "Jeans" link on page load to open the accordion for demo purposes
+    document.getElementById("myBtn").click();
+
+
+    // Open and close sidebar
+    function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+    }
+    </script>
+    
+</body>
+</html>

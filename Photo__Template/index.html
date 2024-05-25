@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        html,body {font-size: 15px; line-height: 1.5;}
+        body,h1 {font-family: "Montserrat", sans-serif;}
+        img {margin-bottom: -7px; width: 100%;}
+        h1,h2,h3,h4,h5 {font-weight: 400; margin: 10px 0;}
+        h1 {font-size: 36px;}
+        p {margin: 15px 0;}
+        b {font-weight: bolder;}
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="nav">
+            <span onclick="w3_open()" class="menu btn right"><i class="fa fa-bars "></i></span>
+            <div class="clear"></div>
+            <header>
+                <h1><b>PHOTOLIO</b></h1>
+                <p><b>A template made by w3.css for photographers.</b></p>
+                <p style="padding: 16px 0;"><button onclick="myFunction()" class="btn header-btn">Toogle Grid Padding</button></p>
+            </header>
+        </div>
+
+        <div id="myGrid" style="margin-bottom: 128px;" class="row">
+            <div class="col l-4 c-12">
+                <img src="assets/img/rocks.jpg" alt="rocks">
+                <img src="assets/img/sound.jpg" alt="sound">
+                <img src="assets/img/woods.jpg" alt="woods">
+                <img src="assets/img/rock.jpg" alt="rock">
+                <img src="assets/img/nature.jpg" alt="nature">
+                <img src="assets/img/mist.jpg" alt="mist">
+            </div>
+            <div class="col l-4 c-12">
+                <img src="assets/img/coffee.jpg" alt="coffee">
+                <img src="assets/img/bridge.jpg" alt="bridge">
+                <img src="assets/img/notebook.jpg" alt="notebook">
+                <img src="assets/img/london.jpg" alt="london">
+                <img src="assets/img/rocks.jpg" alt="rocks">
+                <img src="assets/img/avatar_g.jpg" alt="avatar_g">
+            </div>
+            <div class="col l-4 c-12">
+                <img src="assets/img/mist.jpg" alt="mist">
+                <img src="assets/img/workbench.jpg" alt="workbench">
+                <img src="assets/img/gondol.jpg" alt="gondol">
+                <img src="assets/img/skies.jpg" alt="skies">
+                <img src="assets/img/lights.jpg" alt="lights">
+                <img src="assets/img/workshop.jpg" alt="workshop">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-snapchat"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </p>
+        <p style="font-size: 15px;">Powered by <a href="#">w3.css</a></p>
+    </footer>
+    
+    <nav id="myMenu" class="modal-menu black animatetop" style="display: none; width: 100%; padding-top: 150px;">
+        <a onclick="w3_close()" href="javascript:void(0)" class="btn close-btn display-topright black"><i class="fa fa-remove"></i></a>
+        <div class="bar-block">
+            <a href="#" class="bar-items hover-black">About</a>
+            <a href="#" class="bar-items hover-black">Photos</a>
+            <a href="#" class="bar-items hover-black">Shop</a>
+            <a href="#" class="bar-items hover-black">Contact</a>
+        </div>
+    </nav>
+
+    <script>
+    // Toggle grid padding
+    function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "row") {
+        x.className = "row-padding";
+    } else { 
+        x.className = x.className.replace("row-padding", "row");
+    }
+    }
+
+    // Open and close sidebar
+    function w3_open() {
+    document.getElementById("myMenu").style.width = "100%";
+    document.getElementById("myMenu").style.display = "block";
+    }
+
+    function w3_close() {
+    document.getElementById("myMenu").style.display = "none";
+    }
+    </script>
+</body>
+</html>

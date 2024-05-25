@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Portfolio</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        html,body{ font-size: 15px; line-height: 1.5; font-family: "Raleway", sans-serif; height: 100%; scroll-behavior: smooth;}
+        h1,h2,h3,h4,h5,h6 {margin: 10px 0; font-weight: 400;}
+        img {vertical-align: middle;}
+        h1{font-size: 36px;} h2 {font-size: 30px;} h3{font-size: 24px;} h4 {font-size: 20px;} h5 {font-size: 18px;} h6 {font-size: 16px;}
+        p {margin: 15px 0;}
+        .fs-12 {font-size: 12px;} .fs-18 {font-size: 18px;} .fs-24 {font-size: 24px;}
+    </style>
+</head>
+<body>
+    <!-- begin nav -->
+    <nav style="display: none;" id="mySidebar" class="sidebar animate-right">
+        <a onclick="h_close()" href="javascript:void(0)" class="btn">CLOSE</a>
+        <a onclick="h_close()" href="#" class="btn">PORTFOLIO</a>
+        <a onclick="h_close()" href="#about" class="btn">ABOUT</a>
+        <a onclick="h_close()" href="#contact" class="btn">CONTACT</a>
+    </nav>  
+
+    <div style="display: none;" id="myOverlay" class="overlay animate-opacity"></div>
+
+    <div style="display: none;" id="modal01" class="modal animate-zoom">
+        <span onclick="close_modal()" class="display-topright btn fs-24">×</span>
+        <div class="modal__content">
+            <img id="img01" width="100%" src="assets/img/girl.jpg" alt="Canoeing again" >
+            <p id="caption"></p>
+        </div>
+    </div>
+    
+
+    <!-- begin header -->
+    <header>
+        <span>SOME NAME</span>
+        <a class="btn" onclick="h_open()" href="javascript:void(0)">☰</a>
+    </header>
+
+    <!-- begin content -->
+    <div id="main" class="content">
+        <!-- photo grid -->
+        <div class="gray-scale-min photo-grid">
+            <div class="m-3">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/girl.jpg" alt="Canoeing again">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/boy.jpg" alt="Quiet day at the beach. Cold, but beautiful">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/girl.jpg" alt="The Beach. Me. Alone. Beautiful">
+            </div>
+            <div class="m-3">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/girl_train.jpg" alt="A girl, and a train passing">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/man_bench.jpg" alt="Waiting for the bus in the desert">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/natureboy.jpg" alt="Nature again.. At its finest!">
+            </div>
+            <div class="m-3">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/man_bench.jpg" alt="Waiting for the bus in the desert">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/girl_mountain.jpg" alt="What a beautiful scenery this sunset">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/closegirl.jpg" alt="The Beach. Me. Alone. Beautiful">
+            </div>
+            <div class="m-3">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/natureboy.jpg" alt="A boy surrounded by beautiful nature">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/girl_train.jpg" alt="A girl, and a train passing">
+                <img onclick="onClick(this)" class="hover-opacity" src="assets/img/boy.jpg" alt="Quiet day at the beach. Cold, but beautiful">
+            </div>
+        </div>
+
+        <!-- pagination -->
+        <div class="pagination__container">
+            <div class="pagination__wrap">
+                <a class="pagination-selector" href="#">«</a>
+                <a class="pagination--selected" href="#">1</a>
+                <a class="pagination-selector" href="#">2</a>
+                <a class="pagination-selector" href="#">3</a>
+                <a class="pagination-selector" href="#">4</a>
+                <a class="pagination-selector" href="#">»</a>
+            </div>
+        </div>
+
+        <!-- about -->
+        <div id="about" class="container about__selection">
+            <div class="text-center">
+                <h4>About Me</h4>
+                <img class="about__selection-avatar" src="assets/img/avatar_hat.jpg" alt="Me" width="600" height="650">
+            </div>
+            <div class="content__selection text-justify">
+                <!-- introduce -->
+                <h4>My Name</h4>
+                <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+                    sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>mail: example@example.com</p>
+                <p>tel: 5353 35531</p>
+                <hr class="opacity-min">
+
+                <!-- title 1 -->
+                <h4 class="pd-tb-16">Technical Skills</h4>
+                <p class="lt-spc-4">Photography</p>
+                <div class="chart-full">
+                    <div class="chart-percent" style="--percent: 95%">95%</div>
+                </div>
+
+                <p class="lt-spc-4">Web Design</p>
+                <div class="chart-full">
+                    <div class="chart-percent" style="--percent: 85%">85%</div>
+                </div>
+
+                <p class="lt-spc-4">Photoshop</p>
+                <div class="chart-full">
+                    <div class="chart-percent" style="--percent: 80%">80%</div>
+                </div>
+                <p>
+                    <button class="btn btn-download">Download Resume</button>
+                </p>
+                <hr class="opacity-min">
+
+                <!-- title 2 -->
+                <h4 class="pd-tb-16">How much I charge</h4>
+                <div class="row">
+                    <ul class="col m-6 c-12 combo__list">
+                        <li class="combo-items">Basic</li>
+                        <li class="combo-items">Web Design</li>
+                        <li class="combo-items">Photography</li>
+                        <li class="combo-items">5GB Storage</li>
+                        <li class="combo-items">Mail Support</li>
+                        <li class="combo-items"><h2>$ 10</h2> <br> <span class="opacity-min">per month</span> </li>
+                        <li class="combo-items">
+                            <button class="btn btn-signup">Sign Up</button>
+                        </li>
+                    </ul>
+                    <ul class="col m-6 c-12 combo__list">
+                        <li class="combo-items">Pro</li>
+                        <li class="combo-items">Web Design</li>
+                        <li class="combo-items">Photography</li>
+                        <li class="combo-items">50GB Storage</li>
+                        <li class="combo-items">Endless Support</li>
+                        <li class="combo-items"><h2>$ 25</h2> <br> <span class="opacity-min">per month</span> </li>
+                        <li class="combo-items">
+                            <button class="btn btn-signup">Sign Up</button>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+        </div>
+
+        <!-- contact -->
+        <div id="contact" class="container contact__selection">
+            <div class="content__selection">
+                <h4 class="text-center"><b>Contact Me</b></h4>
+                <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+                <form action="">
+                    <p>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" required name="name">
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" required name="email">
+                    </p>
+                    <p>
+                        <label for="message">Message</label>
+                        <input id="message" type="text" required name="message">
+                    </p>
+                    <p><button type="submit" class="btn btn-send-message">Send Messgae</button></p>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- begin footer -->
+    <footer class="container">
+        <div class="row">
+            <div class="col m-4 c-12">
+                <h3>INFO</h3>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            </div>
+            <div class="col m-4 c-12">
+                <h4>BLOG POSTS</h4>
+                <ul class="blog__list">
+                    <li>
+                        <img width="50px" src="assets/img/workshop.jpg" alt="workshop">
+                        <span class="fs-18">Lorem</span>
+                        <br>
+                        <span>Sed mattis nunc</span>
+                    </li>
+                    <li>
+                        <img width="50px" src="assets/img/gondol.jpg" alt="gondol">
+                        <span class="fs-18">Ipsum</span>
+                        <br>
+                        <span>Praes tinci sed</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col m-4 c-12">
+                <h4>POPULAR TAGS</h4>
+                <p>
+                    <span class="tag bg-black">Travel</span>
+                    <span class="tag bg-dark-grey fs-12">New York</span>
+                    <span class="tag bg-dark-grey fs-12">London</span>
+                    <span class="tag bg-dark-grey fs-12">IKEA</span>
+                    <span class="tag bg-dark-grey fs-12">NORWAY</span>
+                    <span class="tag bg-dark-grey fs-12">DIY</span>
+                    <span class="tag bg-dark-grey fs-12">Ideas</span>
+                    <span class="tag bg-dark-grey fs-12">Baby</span>
+                    <span class="tag bg-dark-grey fs-12">Family</span>
+                    <span class="tag bg-dark-grey fs-12">News</span>
+                    <span class="tag bg-dark-grey fs-12">Clothing</span>
+                    <span class="tag bg-dark-grey fs-12">Shopping</span>
+                    <span class="tag bg-dark-grey fs-12">Sports</span>
+                    <span class="tag bg-dark-grey fs-12">Games</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div class="bottom">
+        <p>Powered by <a style="color: #fff;" href="#">w3.css</a></p>
+    </div>
+
+    <script>
+        function h_open() {
+            document.getElementById('mySidebar').style.display = "block";
+            document.getElementById('myOverlay').style.display = "block";
+        }
+
+        function h_close() {
+            document.getElementById('mySidebar').style.display = "none";
+            document.getElementById('myOverlay').style.display = "none";
+        }
+
+        function close_modal() {
+            document.getElementById('modal01').style.display = "none";
+        }
+
+
+        // Modal Image Gallery
+        function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+        }
+
+
+    </script>
+
+
+</body>
+</html>
+

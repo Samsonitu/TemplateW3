@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+html {
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* common */
+h1,h2,h3,h4 {
+    margin: 10px 0;
+}
+
+p {
+    margin: 15px 0;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.container {
+    padding: 0.1px 16px;
+    display: block;
+}
+
+.pd-lr-8 {
+    padding: 0 8px;
+}
+
+.pd-8-16 {
+    padding: 8px 16px;
+}
+
+.pd-12-24 {
+    padding: 12px 24px;
+}
+
+.pd-16 {
+    padding: 16px;
+}
+
+.mg-b-16 {
+    margin-bottom: 16px;
+}
+
+.mg-r-4 {
+    margin-right: 4px;
+}
+
+.mg-r-16 {
+    margin-right: 16px;
+}
+
+button {
+    font: inherit;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+.white-text {
+    color: var(--white-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+}
+
+.left {
+    float: left;
+}
+
+.light-grey-container {
+    display: block;
+    background-color: #f1f1f1;
+}
+
+.light-grey {
+    background-color: #f1f1f1;
+    display: inline-block;
+}
+
+
+/* main */
+
+#header {
+    padding: 32px 16px;
+}
+
+.span-tag {
+    display: inline-block;
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.row-more {
+    justify-content: space-between;
+}
+
+.tag {
+    display: inline-block;
+    border-radius: 50%;
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.btn-read-more {
+    border: none;
+    border: 1px solid #ccc;
+    background-color: var(--white-color);
+}
+
+.btn-read-more:hover {
+    background-color: #ccc;
+}
+
+.box {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.popular__list {
+    list-style-type: none;
+}
+
+.popular__list li:hover {
+    background-color: #ccc;
+}
+
+#footer {
+    background-color: #616161;
+    color: var(--white-color);
+    margin-top: 16px;
+    padding: 32px 16px;
+}
+
+.btn-footer {
+    border: none;
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.can-not-click {
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.can-click:hover {
+    background-color: #ccc;
+}
+
+
+
+
+

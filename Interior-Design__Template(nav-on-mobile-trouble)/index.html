@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <style>
+        html,body {font-size: 16px; line-height: 1.5; font-family: "Poppins",sans-serif;} 
+        h1,h2,h3,h4,h5,h6 {font-weight: 400; margin: 10px 0;}
+        h3 {font-size: 24px;}
+        p {margin: 15px 0;}
+        .fs-48 {font-size: 48px;} .fs-64 {font-size: 64px;}
+    </style>
+<body>
+    
+    <nav class="sidebar" id="mySidebar">
+        <br>
+        <div class="sidebar__heading container">
+            <a onclick="h_close()" href="#" class="close-btn">Close Menu</a>
+            <h3><b>Company<br>Name</b></h3>
+        </div>
+
+        <div class="sidebar__list">
+
+            <a onclick="h_close()" href="#" class="sidebar__items">Home</a>
+            <a onclick="h_close()" href="#showcase" class="sidebar__items">Showcase</a>
+            <a onclick="h_close()" href="#services" class="sidebar__items">Services</a>
+            <a onclick="h_close()" href="#designers" class="sidebar__items">Designers</a>
+            <a onclick="h_close()" href="#packages" class="sidebar__items">Packages</a>
+            <a onclick="h_close()" href="#contact" class="sidebar__items">Contact</a>
+        </div>
+    </nav>
+
+    <header>
+        <a onclick="h_open()" href="javascript:void(0)">☰</a>
+        <span>Company Name</span>
+    </header>
+
+    <div onclick="h_close" class="overlay" id="myOverlay"></div>
+    <div onclick="this.style.display='none'" id="modal01">
+        <span>×</span>
+        <div class="modal-content">
+            <img id="img01" src="assets/img/atrium.jpg" alt="">
+            <p id="caption">Concrete meets bricks</p>
+        </div>
+    </div>
+
+    <div id="main">
+        <!-- begin showcase -->
+        <div style="margin-top: 80px;" class="container" id="showcase">
+            <h1 class="fs-64"><b>Interior Design</b></h1>
+            <h2 class="fs-48 text-red"><b>Showcase.</b></h2>
+            <hr>
+            <div class="row-pd">
+                <div class="col m-6 c-12">
+                    <img onclick="onClick(this)" class="showcase-img" src="assets/img/kitchenconcrete.jpg" alt="Concrete meets bricks">
+                    <img onclick="onClick(this)" class="showcase-img" src="assets/img/diningroom.jpg" alt="Light, white and tight scandinavian design">
+                    <img class="showcase-img" src="assets/img/livingroom.jpg" alt="White walls with designer chairs">
+                </div>
+                <div class="col m-6 c-12">
+                    <img onclick="onClick(this)" class="showcase-img" src="assets/img/atrium.jpg" alt="Windows for the atrium">
+                    <img onclick="onClick(this)" class="showcase-img" src="assets/img/bedroom.jpg" alt="Bedroom and office in one space">
+                    <img onclick="onClick(this)" class="showcase-img" src="assets/img/livingroom2.jpg" alt="Scandinavian design">
+                </div>
+            </div>
+        </div>
+        <!-- begin services -->
+        <div style="margin-top: 75px;" class="container" id="services">
+            <h2 class="fs-48 text-red"><b>Services.</b></h2>
+            <hr>
+            <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+            </p>
+        </div>
+        <!-- begin designers -->
+        <div style="margin-top: 75px;" class="container" id="designers">
+            <h2 class="fs-48 text-red"><b>Designers.</b></h2>
+            <hr>
+            <p>The best team in the world.</p>
+            <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p><b>Our designers are thoughtfully chosen:</b></p>
+            <div class="row-pd gray-scale">
+                <div class="col col-mgbt m-4 c-12">
+                    <div class="light-grey">
+                        <img width="100%" src="assets/img/team2.jpg" alt="team1">
+                        <div class="container">
+                            <h3>John Doe</h3>
+                            <p class="opacity">CEO & Founder</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-mgbt m-4 c-12">
+                    <div class="light-grey">
+                        <img width="100%" src="assets/img/team1.jpg" alt="team2">
+                        <div class="container">
+                            <h3>Jane Doe</h3>
+                            <p class="opacity">Designer</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-mgbt m-4 c-12">
+                    <div class="light-grey">
+                        <img width="100%" src="assets/img/team3.jpg" alt="team3">
+                        <div class="container">
+                            <h3>Mike Ross</h3>
+                            <p class="opacity">Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- begin packages -->
+        <div style="margin-top: 75px;" class="container" id="packages">
+            <h2 class="fs-48 text-red"><b>Packages.</b></h2>
+            <hr>
+            <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            </p>
+            <div class="row-pd">
+                <ul class="packages__options col m-6 c-12">
+                    <li class="bg-gray">Basic</li>
+                    <li>Floorplanning</li>
+                    <li>10 hours support</li>
+                    <li>Photography</li>
+                    <li>20% furniture discount</li>
+                    <li>Good deals</li>
+                    <li>
+                        <h2>$ 199</h2>
+                        <span class="opacity">per room</span>
+                    </li>
+                    <li>
+                        <button class="btn btn-sign-up">Sign Up</button>
+                    </li>
+                </ul>
+                <ul class="packages__options col m-6 c-12">
+                    <li class="bg-red">Pro</li>
+                    <li>Floorplanning</li>
+                    <li>50 hours supportt</li>
+                    <li>Photography</li>
+                    <li>50% furniture discount</li>
+                    <li>GREAT deals</li>
+                    <li>
+                        <h2>$ 249</h2>
+                        <span class="opacity">per room</span>
+                    </li>
+                    <li>
+                        <button class="btn">Sign Up</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- begin contact -->
+        <div style="margin-top: 75px;" class="container" id="contact">
+            <h2 class="fs-48 text-red"><b>Contact.</b></h2>
+            <hr>
+            <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+            <div class="form-infomation">
+                <form action="">
+                    <p>
+                        <label for="#name">Name</label>
+                        <input id="name" type="text" required name="name">
+                    </p>
+                    <p>
+                        <label for="#email">Email</label>
+                        <input id="email" type="email" required name="email">
+                    </p>
+                    <p>
+                        <label for="#message">Message</label>
+                        <input id="message" type="text" required name="message">
+                    </p>
+                    <p><button type="submit" class="btn">Send Message</button></p>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <footer class="container" style="margin-top: 75px; padding: 32px 54px 32px 16px;">
+        <p>Powered by <a class="hover-opacity" href="#">w3.css</a></p>
+    </footer>
+
+    <script>
+        function h_open() {
+            document.getElementById('mySidebar').style.display="block";
+            document.getElementById('myOverlay').style.display="block";
+        }
+        function h_close() {
+            document.getElementById('mySidebar').style.display="none";
+            document.getElementById('myOverlay').style.display="none";
+        }
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+</html>

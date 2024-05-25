@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --dark-grey-color: #616161;
+}
+
+/* common */
+html {
+    font-family: Verdana,sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Karma", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+}
+
+p {
+    margin: 10px 0 ;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.pd-8-16 {
+    padding: 8px 16px;
+}
+
+.pd-tb-32 {
+    padding: 32px 0;
+}
+
+.pd-32-16 {
+    padding: 32px 16px !important;
+}
+
+.pd-16 {
+    padding: 16px;
+}
+
+.mg-b-16 {
+    margin-bottom: 16px !important;
+}
+
+.white-text {
+    color: var(--white-color) !important;
+}
+
+.black-text {
+    color: var(--black-color);
+}
+
+.bg-black {
+    background-color: var(--black-color) !important;
+}
+
+.bg-dark-grey {
+    background-color: var(--dark-grey-color);
+}
+
+.tag-text {
+    display: inline-block;
+    padding: 0 8px;
+    color: var(--white-color);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+/* main */
+#nav {
+    z-index: 2;
+    width: 40%;
+    height: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    min-width: 300px;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    animation: animateleft ease .4s;
+}
+
+#nav a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--black-color);
+}
+
+#nav a:hover {
+    background-color: #ccc;
+}
+
+.menu-btn:hover {
+    background-color: #ccc;
+}
+
+.header__top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    background-color: var(--white-color);
+}
+
+.header__container {
+    justify-content: space-between;
+}
+
+.food__container {
+    margin-top: 100px;
+}
+
+.page__list {
+    justify-content: center;
+}
+
+.page__link {
+    display: block;
+    margin: 0 4px;
+    text-decoration: none;
+}
+
+.page__item {
+    color: var(--black-color);
+}
+
+.page__item:hover {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.page__selected {
+    color: var(--white-color);
+    background-color: var(--black-color);
+}
+
+.page__selected:hover {
+    color: var(--black-color);
+    background-color: #ccc;
+}
+
+.about-me {
+    padding: 32px 16px;
+}
+
+.chef-img {
+    width: 800;
+    height: 533;
+    max-width: 100%;
+    height: auto;
+}
+
+.blog__post-item:hover {
+    background-color: #ccc;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+@keyframes animateleft {
+    0% {
+        left: -300px;
+        opacity: 0;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}

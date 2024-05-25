@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Inconsolata", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+.container::before, .container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.white-text {color: #fff;} .black-text {color: #000;} .grey-text {color: #757575;}
+
+.text-center {
+    text-align: center;
+}
+
+.gray-scale {
+    filter: grayscale(75%);
+}
+
+.gray-scale-min {
+    filter: grayscale(50%);
+}
+
+.lt-spc-4 {
+    letter-spacing: 4px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-grey {
+    color: #757575;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.display-middle {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+.display-bottomleft {
+    left: 24px;
+    bottom: 40px;
+    position: absolute;
+}
+
+.display-bottomright {
+    right: 24px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.display-container {
+    position: relative;
+}
+
+.tag {
+    color: #fff;
+    padding: 0 8px;
+    text-align: center;
+    display: inline-block;
+    background-color: #000;
+}
+
+
+/* main */
+.top {
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+
+.nav {
+    padding: 8px 16px;
+    text-wrap: nowrap;
+    background-color: #000;
+}
+
+.nav li {
+    width: 24.99999%;
+    display: inline-block;
+}
+
+.nav li a {
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    color: #000;
+    background-color: #ccc;
+}
+/* end nav */
+
+.sand {
+    display: block;
+    color: #000;
+    background-color: #fdf5e6;
+}
+
+.container {
+    padding: 0.01em 16px;
+}
+
+.content-selection {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.selection-heading {
+    text-align: center;
+    padding: 64px 0;
+    margin: 10px 0;
+}
+
+.quote__container {
+    margin: 16px 0;
+    padding: 0.01em 16px;
+    background-color: #f1f1f1;
+    border-left: 6px solid #ccc;
+}
+
+.menu__container {
+    padding: 8px 16px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+.menu__container::before,
+.menu__container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-menu {
+    width: 50%;
+    float: left;
+    text-align: center;
+    display: block;
+}
+
+.menu__list {
+    padding: 48px 16px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+input {
+    width: 100%;
+    border: none;
+    font: inherit;
+    border: 1px solid #ccc;
+    padding: 16px 8px;
+    margin: 10px 0;
+}
+
+.btn {
+    color: #fff;
+    border: none;
+    font: inherit;
+    padding: 8px 16px;
+    background-color: #000;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+footer {
+    color: #000;
+    padding: 48px 0;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+footer a{
+    color: #000;
+}
+
+/* js-menu */
+.dark-grey {
+    color: #fff;
+    background-color: #616161;
+}
+
+.menu {
+    display: none;
+}

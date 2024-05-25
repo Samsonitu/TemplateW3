@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Restaurant</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        html,body {height: 100%; font-size: 15px; line-height: 1.5; font-family: "Raleway",sans-serif;}
+        body {height: 100%;}
+        h1,h2,h3,h4,h5,h6 {margin: 10px 0; font-weight: 400;}
+        h1 {font-size: 36px;}
+        p {margin: 24px 0;}
+        .fs-18 {font-size: 18px;}  .fs-24 {font-size: 24px} .fs-64 {font-size: 64px;}
+        .bgimg {
+            background-image: url('assets/img/onepage_restaurant.jpg');
+            min-height: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bgimg display-container text-white">
+        <div class="display-topleft fs-24 container">
+            <p><button onclick="document.getElementById('menu').style.display='block'" class="btn">Menu</button></p>
+            <p><button onclick="document.getElementById('contact').style.display='block'" class="btn">Contact</button></p>
+        </div>
+        <div class="display-middle">
+            <p class="fs-64">logo</p>
+        </div>
+        <div class="display-bottomleft container">
+            <p class="fs-24">monday - friday 10-23 | saturday 14-02</p>
+            <p class="fs-18">42 village St, New York</p>
+            <p>powered by <a style="color: #fff;" class="hover-opacity" href="#">w3.css</a></p>
+        </div>
+    </div>
+
+    <div id="menu" class="modal">
+        <div class="modal-content">
+            <div class="container bg-black display-container text-white">
+                <span onclick="document.getElementById('menu').style.display='none'" class="display-topright btn fs-18">x</span>
+                <h1>Starters</h1>
+            </div>
+            <div class="container">
+                <h5 class="fs-18">Tomato Soup <b>$2.50</b></h5>
+                <h5 class="fs-18">Chicken Salad <b>$3.50</b></h5>
+                <h5 class="fs-18">Bread and Butter <b>$1.00</b></h5>
+            </div>
+            <div class="container bg-black display-container text-white">
+                <h1>Main Courses</h1>
+            </div>
+            <div class="container">
+                <h5 class="fs-18">Grilled Fish and Potatoes <b>$8.50</b></h5>
+                <h5 class="fs-18">Italian Pizza <b>$5.50</b></h5>
+                <h5 class="fs-18">Veggie Pasta <b>$4.00</b></h5>
+                <h5 class="fs-18">Chicken and Potatoes <b>$6.50</b></h5>
+                <h5 class="fs-18">Deluxe Burger <b>$5.00</b></h5>
+            </div>
+            <div class="container bg-black display-container text-white">
+                <h1>Desserts</h1>
+            </div>
+            <div class="container">
+                <h5 class="fs-18">Fruit Salad <b>$2.50</b></h5>
+                <h5 class="fs-18">Ice cream <b>$2.00</b></h5>
+                <h5 class="fs-18">Chocolate Cake <b>$4.00</b></h5>
+                <h5 class="fs-18">Cheese <b>$5.50</b></h5>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="modal">
+        <div class="modal-content">
+            <div class="display-container container bg-black text-white">
+                <span onclick="document.getElementById('contact').style.display='none'" class="display-topright btn fs-18">x</span>
+                <h1>Contact</h1>
+            </div>
+            <div class="container">
+                <p>Reserve a table, ask for today's special or just send us a message:</p>
+                <form action="">
+                    <p><input placeholder="Name" required name="name" type="text"></p>
+                    <p><input placeholder="How many people" required name="people" type="number"></p>
+                    <p><input placeholder="Date and Time" required name="date" value="2005-05-03T01:00" type="datetime-local"></p>
+                    <p><input placeholder="Message \ Special requirements" required name="message" type="text"></p>
+                    <p><button type="submit">SEND MESSAGE</button></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #009688;
+    --gray-color: #757575;
+    --light-grey: #f1f1f1;
+}
+
+.light-grey-text {
+    color: var(--light-grey);
+}
+
+.light-grey-bg {
+    background-color: var(--light-grey);
+}
+
+.gray-bg {
+    background-color: var(--gray-color);
+}
+
+.light-green-text {
+    color: var(--primary-color);
+}
+
+.light-green-bg {
+    background-color: var(--primary-color);
+}
+
+/* common */
+.icon {
+    color: var(--primary-color);
+    margin-right: 16px;
+}
+
+.opacity {
+    opacity: 0.6;
+}
+
+
+
+/* main */
+.grid {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1400px;
+    margin: 16px auto 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8px;
+}
+
+.col {
+    width: 100%;
+    padding: 0 8px;
+}
+
+.c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.display-container {
+    position: relative;
+}
+
+.display-bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.box {
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+    background-color: #fff;
+}
+
+.container {
+    color: var(--gray-color);
+    padding: 0.01em 16px;
+}
+
+.container::before, .container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.icon {
+    margin-right: 16px;
+    color: var(--primary-color);
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #eee;
+}
+
+.round-large {
+    border-radius: 16px;
+}
+
+.tag {
+    color: #fff;
+    border-radius: 4px;
+    padding: 0 8px;
+    display: inline-block;
+    background-color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    margin-top: 16px;
+    padding: 0.001em 16px;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+footer i:hover,
+footer a:hover {
+    opacity: 0.6;
+}
+
+
+@media (min-width: 1023px) {
+    .l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .l-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        html,body {height: 100%; width: 100%; font-family: "Montserrat", sans-serif; font-size: 15px; line-height: 1.5; scroll-behavior: smooth;}
+        h1,h2,h3,h4,h5,h6 {font-weight: 400; margin: 10px 0;}
+        h1{font-size: 36px;} h2{font-size: 30px;}
+        p {margin: 15px 0;}
+        .fs-64{font-size: 64px;} .fs-36 {font-size: 36px;} .fs-24{font-size: 24px;} .fs-18 {font-size: 18px;}
+        img {vertical-align: middle;}
+    </style>
+</head>
+<body class="bg-black">
+    <nav class="sidebar">
+        <img src="assets/img/avatar_smoke.jpg" width="100%" alt="avatar_smoke">
+        <a class="btn btn--selected" href="#">
+            <i class="fs-36 fa-solid fa-house-chimney"></i>
+            <p>Home</p>
+        </a>
+        <a class="btn" href="#about">
+            <i class="fs-36 fa-solid fa-user"></i>
+            <p>About</p>
+        </a>
+        <a class="btn" href="#photos">
+            <i class="fs-36 fa-regular fa-eye"></i>
+            <p>Photos</p>
+        </a>
+        <a class="btn" href="#contact">
+            <i class="fs-36 fa-solid fa-envelope"></i>
+            <p>Contact</p>
+        </a>
+    </nav>
+
+    <div class="top">
+        <a class="btn-small" href="#">HOME</a>
+        <a class="btn-small" href="#about">ABOUT</a>
+        <a class="btn-small" href="#photos">PHOTOS</a>
+        <a class="btn-small" href="#contact">CONTACT</a>
+    </div>
+
+    <div id="main" >
+        <header class="container">
+            <h1 class="fs-64"><span class="hide-small">I'm </span>John Doe.</h1>
+            <p>Photographer and Web Designer.</p>
+            <img src="assets/img/man_smoke.jpg" width="992" height="1108" alt="man_smoke">
+        </header>
+
+        <div id="about" class="content">
+            <div class="container">
+                <h2 class="light-grey">My name</h2>
+                <hr class="opacity">
+                <p class="dark-grey text-justify">
+                    Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <h3 class="pd-tb-16 light-grey">My Skills</h3>
+                <p class="lt-spc-4 dark-grey">Photography</p>
+                <div class="chart__full"><div class="chart__items" style="--percent: 95%"></div></div>
+
+                <p class="lt-spc-4 dark-grey">Web Design</p>
+                <div class="chart__full"><div class="chart__items" style="--percent: 85%"></div></div>
+
+                <p class="lt-spc-4 dark-grey">Photoshop</p>
+                <div class="chart__full"><div class="chart__items" style="--percent: 80%"></div></div>
+                <br>
+                <div class="row echie__list">
+                    <div class="l-3 c-12 echie__items"><span class="fs-24">11+</span><br>Partners</div>
+                    <div class="l-3 c-12 echie__items"><span class="fs-24">55+</span><br>Projects Done</div>
+                    <div class="l-3 c-12 echie__items"><span class="fs-24">89+</span><br>Happy Clients</div>
+                    <div class="l-3 c-12 echie__items"><span class="fs-24">150+</span><br>Meetings</div>
+                </div>
+                <p>
+                    <button class="btn-download"><i class="fa-solid fa-download"></i> Download Resume</button>
+                </p>
+
+                <h3 class="pd-tb-16 light-grey">My Price</h3>
+                <div class="row no-gutter">
+                    <ul class="col l-6 c-12 price__list">
+                        <li>Basic</li>
+                        <li>Web Design</li>
+                        <li>Photography</li>
+                        <li>5GB Storage</li>
+                        <li>Mail Support</li>
+                        <li>
+                            <h2>$ 10</h2>
+                            <span class="opacity">per month</span>
+                        </li>
+                        <li>
+                            <button class="btn">
+                                Sign Up
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="col l-6 c-12 price__list">
+                        <li>Basic</li>
+                        <li>Web Design</li>
+                        <li>Photography</li>
+                        <li>5GB Storage</li>
+                        <li>Mail Support</li>
+                        <li>
+                            <h2>$ 25</h2>
+                            <span class="opacity">per month</span>
+                        </li>
+                        <li>
+                            <button class="btn">
+                                Sign Up
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <h3 class="pd-tb-16 light-grey">My Reputation</h3>
+                <div class="row align-center">
+                    <div class="col l-2"><img class="circle" width="80px" src="assets/img/bandmember.jpg" alt="bandmember"></div>
+                    <div class="col l-10">
+                        <p class="dark-grey">
+                            <span class="fs-18 mg-r-16">Chris Fox.</span>
+                            CEO at Mighty Schools.
+                        </p>
+                        <p class="dark-grey">
+                            John Doe saved us from a web disaster.
+                        </p>
+                    </div>
+                </div>
+                <div class="row align-center">
+                    <div class="col l-2"><img class="circle" width="80px" src="assets/img/avatar_g2.jpg" alt="avatar_g2"></div>
+                    <div class="col l-10">
+                        <p class="dark-grey">
+                            <span class="fs-18 mg-r-16">Rebecca Flex.</span>
+                            CEO at Company.
+                        </p>
+                        <p class="dark-grey">
+                            No one is better than John Doe.
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div id="photos" class="content">
+            <div class="container">
+                <h2 class="light-grey">My Photos</h2>
+                <hr width="200px" class="opacity">
+                <div class="row no-gutter">
+                    <div class="col l-6 c-12">
+                        <img width="100%" src="assets/img/wedding.jpg" alt="wedding">
+                        <img width="100%" src="assets/img/rocks.jpg" alt="rocks">
+                        <img width="100%" src="assets/img/sailboat.jpg" alt="sailboat">
+                    </div>
+                    <div class="col l-6 c-12">
+                        <img width="100%" src="assets/img/underwater.jpg" alt="underwater">
+                        <img width="100%" src="assets/img/chef.jpg" alt="chef">
+                        <img width="100%" src="assets/img/wedding.jpg" alt="wedding">
+                        <img width="100%" src="assets/img/p6.jpg" alt="p6">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="content">
+            <h2 class="light-grey">Contact Me</h2>
+            <hr width="200px" class="opacity">
+            <p>
+                <i class="info__icons fa-solid fa-location-dot"></i>
+                Chicago, US
+            </p>
+            <p>
+                <i class="info__icons fa-solid fa-phone"></i>
+                Phone: +00 151515
+            </p>
+            <p>
+                <i class="info__icons fa-solid fa-envelope"></i>
+                Email: mail@mail.com
+            </p>
+            <br>
+            <p class="dark-grey">Let's get in touch. Send me a message:</p>
+            <form action="">
+                <p><input type="text" placeholder="Name" required name="name"></p>
+                <p><input type="email" placeholder="Email" required name="email"></p>
+                <p><input type="text" placeholder="Subject" required name="subject"></p>
+                <p><input type="text" placeholder="Message" required name="message"></p>
+                <button class="btn-sendmessage" type="submit"><i class="fa-solid fa-paper-plane"></i> SEND MESSAGE</button>
+            </form>
+        </div>
+
+        <footer class="content">
+            <p>
+                <i class="hover-opacity fa-brands fa-square-facebook"></i>
+                <i class="hover-opacity fa-brands fa-instagram"></i>
+                <i class="hover-opacity fa-brands fa-snapchat"></i>
+                <i class="hover-opacity fa-brands fa-pinterest-p"></i>
+                <i class="hover-opacity fa-brands fa-twitter"></i>
+                <i class="hover-opacity fa-brands fa-linkedin-in"></i>
+            </p>
+            <p>Powered by <a href="">w3.css</a></p>
+        </footer>
+    </div>
+    
+</body>
+</html>

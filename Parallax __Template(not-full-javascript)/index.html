@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>        
+        body,h1,h2,h3,h4,h5,h6 {
+        font-family: "Lato", sans-serif;
+        }
+
+        html, body {
+            font-size: 15px;
+        }
+
+        body, html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+        background-image: url('assets/img/parallax1.jpg');
+        min-height: 100%;
+        }
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+        background-image: url("assets/img/parallax2.jpg");
+        min-height: 400px;
+        }
+
+        .bgimg {
+            position: relative;
+        }
+
+        /* Third image (Contact) */
+        .bgimg-3 {
+        background-image: url("assets/img/parallax3.jpg");
+        min-height: 400px;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones */
+        @media only screen and (max-device-width: 1600px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+            min-height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header-top">
+            <ul id="nav">
+                <li><a class="pd-8-16" href="#home">Home</a></li>
+                <li>
+                    <a class="pd-8-16" href="#about"><i class="fa fa-user"></i> About</a></li>
+                <li>
+                    <a class="pd-8-16" href="#portfolio"><i class="fa fa-th"></i> Portfolio</a></li>
+                <li>
+                    <a class="pd-8-16" href="#contact"><i class="fa fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="search-btn pd-8-16">
+                <i class="fa fa-search"></i>
+            </div>
+    
+            <!-- Mobile-icon -->
+            <div id="mobile-menu" class="mobile-btn pd-8-16">
+                <i class="fa fa-bars"></i>
+            </div>
+    </div>
+    
+    <!-- HOME -->
+    <div id="home" class="bgimg bgimg-1 opacity-min">
+            <div class="display-middle">
+                <span class="heading pd-12-24 lt-spc-10">MY WEBSITE LOGO</span>
+            </div>
+    </div>
+    
+    <!-- ABOUT -->
+    <div id="about" class="grid wide pd-64-16">
+            <h3 class="text-center">ABOUT ME</h3>
+            <p class="text-center" ><em>I love photography</em></p>
+            <p>We have created a fictional "personal" website/blog, and our fictional character is a hobby photographer. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            
+            <div class="row">
+                <div class="l-6 c-12 pd-12-24">
+                    <p class="text-center"><i class="fa fa-user"></i> My Name</p>
+                    <br>
+                    <img class="avatar-img" src="assets/img/avatar_hat.jpg" alt="avatar">
+                </div>
+                <div class="l-6 .-12 pd-12-24">
+                    <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+    
+            <p class="text-center pd-tb-16 fs-18">Im really good at:</p>
+            <p class="lt-spc-10"><i class="fa fa-camera"></i> Photography</p>
+            <div class="light-grey"><div style="width: 90%;" class="dark-grey text-center">90%</div></div>
+            <p class="lt-spc-10"><i class="fa fa-laptop"></i> Web Design</p>
+            <div class="light-grey"><div style="width: 85%;" class="dark-grey text-center">85%</div></div>
+            <p class="lt-spc-10"><i class="fa fa-image"></i> Photoshop</p>
+            <div class="light-grey"><div style="width: 75%;" class="dark-grey text-center">75%</div></div>
+    </div>
+    
+    <div class="dark-grey pd-tb-16 row">
+            <div class="fourth-section mg-tb-16 text-center">
+                <span class="fs-24">14+</span>
+                <br>
+                Partners
+            </div>
+            <div class="fourth-section mg-tb-16 text-center">
+                <span class="fs-24">55+</span>
+                <br>
+                Projects Done
+            </div>
+            <div class="fourth-section mg-tb-16 text-center">
+                <span class="fs-24">89+</span>
+                <br>
+                Happy Clients
+            </div>
+            <div class="fourth-section mg-tb-16 text-center">
+                <span class="fs-24">150+</span>
+                <br>
+                Mettings
+            </div>
+    
+    </div>
+    
+    <div class="bgimg bgimg-2 opacity-min">
+            <span class="display-middle lt-spc-10 fs-36 text-white">PORTFOLIO</span>
+    </div>
+        
+    <!-- PORTFOLIO -->
+    <div id="portfolio" class="grid wide pd-64-16">
+            <h3 class="text-center">MY WORK</h3>
+            <p class="text-center">
+                <em>Here are some of my latest lorem work ipsum tipsum.
+                <br>
+                Click on the images to make them bigger</em></p>
+            <br>
+            <div class="row">
+                <div class="col l-3 m-3 c-12">
+                    <img class="places__img" src="assets/img/p1.jpg" alt="">
+                </div>
+                <div class="col l-3 m-3 c-12">
+                    <img class="places__img" src="assets/img/p2.jpg" alt="">
+                </div>
+                <div class="col l-3 m-3 c-12">
+                    <img class="places__img" src="assets/img/p3.jpg" alt="">
+                </div>
+                <div class="col l-3 m-3 c-12">
+                    <img class="places__img" src="assets/img/p4.jpg" alt="">
+                </div>
+            </div>
+            <div class="row mg-tb-16">
+                <div class="col l-3 m-3 c-12">
+                    <img class="places__img" src="assets/img/p5.jpg" alt="">
+                </div>
+                <div class="col l-3 m-3 c-12">
+                    <img class="places__img" src="assets/img/p6.jpg" alt="">
+                </div>
+                <div class="col l-3 m-3 c-12">
+                    <img class="places__img" src="assets/img/p7.jpg" alt="">
+                </div>
+                <div class="col l-3 m-3 c-12">
+                    <img class="places__img" src="assets/img/p8.jpg" alt="">
+                </div>
+                <button class="pd-12-24 load-more-btn">LOAD MORE</button>
+            </div>
+    </div>
+    
+    <div class="bgimg bgimg-3 opacity-min">
+            <span class="display-middle lt-spc-10 fs-36 text-white">CONTACT</span>
+    </div>
+    
+    <!-- CONTACT -->
+    <div id="contact" class="grid wide pd-64-16">
+            <h3 class="text-center">WHERE I WORK</h3>
+            <p class="text-center"><em>I'd love your feedback!</em></p>
+    
+            <div class="row pd-tb-32 mg-tb-16">
+                <div class="l-4 m-4 c-12 pd-lr-16">
+                    <img class="map" width="100%" src="assets/img/map.jpg" alt="">
+                </div>                
+                <div class="l-8 m-8 c-12 pd-lr-16">
+                    <div class="fs-18">
+                        <span class="info__item"><i class="fa fa-map-marker pull-right-16 "></i> Chicago, US</span>
+                        <span class="info__item"><i class="fa fa-phone pull-right-16"></i> Phone: +00 151515</span>
+                        <span class="info__item"><i class="fa fa-envelope pull-right-16"></i>Email: mail@mail.com</span>
+                    </div>
+                    <p>Swing by for a cup of <i class="fa fa-coffee"></i> , or leave me a note:</p>
+                    <form action="" target="_blank">
+                        <div class="row">
+                            <div style="margin-bottom: 8px;" class="col l-6 m-6 c-12">
+                                <input class="info__input" type="text" placeholder="Name" required name="Name">
+                            </div>
+                            <div style="margin-bottom: 8px;" class="col l-6 m-6 c-12">
+                                <input class="info__input" type="email" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l-12 c-12">
+                                <input class="info__input" type="text" placeholder="Message" required name="Message">
+                            </div>
+                        </div>
+                        <button class="mg-tb-16 info__btn pd-8-16"><i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+    </div>
+    
+    <!-- FOOTER -->
+    <div class="footer">
+            <a href="#home" class="pd-8-16 link-move-top"><i class="fa fa-arrow-up pull-right-16"></i>To the top</a>
+            <div class="social mg-tb-16 fs-24">
+                <i class="social__icon fa-brands fa-square-facebook"></i>
+                <i class="social__icon fa-brands fa-instagram"></i>
+                <i class="social__icon fa-brands fa-snapchat"></i>
+                <i class="social__icon fa-brands fa-pinterest-p"></i>
+                <i class="social__icon fa-brands fa-twitter"></i>
+                <i class="social__icon fa-brands fa-linkedin-in"></i>
+            </div>
+            <p>Powered by <a style="color: var(--white-color);" href="">w3.css</a></p>
+    </div>
+    
+    
+    <script>
+        var headerTop = document.getElementById('header-top');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerTopHeight = headerTop.clientHeight;
+
+        // Đóng mở mobile menu
+        mobileMenu.onclick = function () {
+            var isClosed = headerTop.clientHeight === headerTopHeight;
+            if (isClosed) {
+                headerTop.style.height = 'auto';
+            } else {
+                headerTop.style.height = null;
+            }
+        }
+        
+        // Tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function() {
+                headerTop.style.height = null;
+            }
+        }
+</script>
+</body>
+</html>

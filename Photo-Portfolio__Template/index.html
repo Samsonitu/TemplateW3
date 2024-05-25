@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Portfolio</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <style>
+        html,body {font-family: Verdana, sans-serif ; font-size: 15px; line-height: 1.5; height: 100%;}
+        h1,h2,h3,h4,h5,h6{font-family: "Segeo UI", Arial, sans-serif; font-weight: 400; margin: 10px 0; letter-spacing: 4px;}
+        p{margin: 15px 0;}
+        img{vertical-align: middle; margin-bottom: 16px; width: 1000; height: 500; max-width: 100%; height: auto;}
+        .fs-48{font-size: 48px;} .fs-24{font-size: 24px;}
+    </style>
+</head>
+<body>
+    <header class="display-container">
+        <img style="margin-bottom: 0;" width="1500" height="600" src="assets/img/photographer.jpg" alt="photographer">
+        <div class="display-middle border">
+            <h1 class="fs-48">JANE DOE</h1>
+            <h2 class="fs-24">PHOTOGRAPHER</h2>
+        </div>
+        <div style="bottom: -16px;" class="display-bottom-middle">
+            <a href="#">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <div class="nav-hide-small">
+            <a href="#">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+    </div>
+
+    <div class="content">
+        <div id="portfolio">
+            <img src="assets/img/ocean.jpg" alt="ocean">
+            <img src="assets/img/ocean2.jpg" alt="ocean2">
+            <img src="assets/img/falls2.jpg" alt="falls2">
+            <img src="assets/img/mountainskies.jpg" alt="mountainskies">
+            <img src="assets/img/mountains2.jpg" alt="mountains2">
+        </div>
+
+        <div id="contact">
+            <h3 style="text-align: center;" class="fs-24">Contact</h3>
+            <hr style="border: none; margin: 20px 0;">
+            <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. 
+                Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.
+            </p>
+            <form action="">
+                <p>
+                    <label for="text">Name</label>
+                    <input id="text" type="text" required name="text">
+                </p>
+                <p>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" required name="email">
+                </p>
+                <p>
+                    <label for="message">Message</label>
+                    <input id="message" type="text" required name="message">
+                </p>
+                <button type="submit">Send</button>
+            </form>
+
+            <br>
+            <p>Powered by <a style="color: #000;" href="">w3.css</a></p>
+            
+        </div>
+    </div>
+</body>
+</html>

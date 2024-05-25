@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Portfolio</title>
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+        html,body {height: 100%; font-size: 15px; line-height: 1.5; scroll-behavior: smooth;}
+        body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif;}
+        h1,h2,h3,h4,h5 {margin: 10px 0; font-weight: 400;}
+        p {margin: 15px 0;}
+        img {vertical-align: middle;}
+        h2{font-size: 30px;} h3 {font-size: 24px;} h4 {font-size: 20px;}
+    </style>
+</head>
+<body class="light-grey">
+    <nav id="mySidebar" class="sidebar animate-left" style="display: none;">
+        <br>
+        <h3><b>SOME<br>NAME</b></h3>
+        <a onclick="h_close()" href="javascript:void(0)" class="btn btn-close">Close</a>
+        <a onclick="h_close()" href="#" class="btn">PORTFOLIO</a>
+        <a onclick="h_close()" href="#about" class="btn">ABOUT ME</a>
+        <a onclick="h_close()" href="#contact" class="btn">CONTACT</a>
+    </nav>
+
+    <header>
+        <span style="padding: 8px 16px;">SOME NAME</span>
+        <a onclick="h_open()" href="javascript:void(0)" style="padding: 8px 16px; text-decoration: none; color: #000;" class="btn">☰</a>
+    </header>
+
+    <div onclick="h_close()" id="myOverlay" class="overlay"></div>
+
+    <div id="main">
+        <div class="row">
+                <div class="l-4 c-12">
+                    <img onclick="onClick(this)" width="100%" class="opacity opacity-off" src="assets/img/natureboy.jpg" 
+                    alt="A boy surrounded by beautiful nature">
+                    <img onclick="onClick(this)" width="100%" class="opacity opacity-off" src="assets/img/boy.jpg" 
+                    alt="WWhat a beautiful scenery this sunset">
+                    <img onclick="onClick(this)" width="100%" class="opacity opacity-off" src="assets/img/girl.jpg" 
+                    alt="The Beach. Me. Alone. Beautiful">
+                </div>
+                <div class="l-4 c-12">
+                    <img onclick="onClick(this)" width="100%" class="opacity opacity-off" src="assets/img/girl_mountain.jpg" 
+                    alt="Quiet day at the beach. Cold, but beautiful">
+                    <img onclick="onClick(this)" width="100%" class="opacity opacity-off" src="assets/img/man_bench.jpg" 
+                    alt="Waiting for the bus in the deserth">
+                    <img onclick="onClick(this)" width="100%" class="opacity opacity-off" src="assets/img/girl_train.jpg" 
+                    alt="Nature again.. At its finest!">
+                </div>
+                <div class="l-4 c-12">
+                    <img onclick="onClick(this)" width="100%" class="opacity opacity-off" src="assets/img/girl.jpg" 
+                    alt="Canoeing again">
+                    <img onclick="onClick(this)" width="100%" class="opacity opacity-off" src="assets/img/natureboy.jpg" 
+                    alt="A girl, and a train passing">
+                    <img onclick="onClick(this)" width="100%" class="opacity opacity-off" src="assets/img/closegirl.jpg" 
+                    alt="What a beautiful day!">
+                </div>
+        </div>
+        <div class="nav__page-wrap">
+                <div class="nav__page-list">
+                    <a href="" class="nav__page-items">«</a>
+                    <a href="" class="nav__page-items nav__page-items--selected">1</a>
+                    <a href="" class="nav__page-items">2</a>
+                    <a href="" class="nav__page-items">3</a>
+                    <a href="" class="nav__page-items">4</a>
+                    <a href="" class="nav__page-items">»</a>
+                </div>
+        </div>
+        <div id="about" onclick="h_close()" class="about__content">
+            <div class="container">
+                <h4><b>About Me</b></h4>
+                <img class="about-img" width="600" height="650" src="assets/img/avatar_hat.jpg" alt="Me">
+                <div class="content__justify">
+                    <h4>My Name</h4>
+                    <p>Some text about me. I love taking photos of PEOPLE. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                    <p>mail: example@example.com</p>
+                    <p>tel: 5353 35531</p>
+                    <hr>
+                    <h4 style="padding: 16px 0;">Technical Skills</h4>
+                    <p class="lt-spc-4">Photography</p>
+                    <div class="bg-white"><div class="chart-items" style="--percent: 95%">95%</div></div>
+                    <p class="lt-spc-4">Web Design</p>
+                    <div class="bg-white"><div class="chart-items" style="--percent: 85%">85%</div></div>
+                    <p class="lt-spc-4">Photoshop</p>
+                    <div class="bg-white"><div class="chart-items" style="--percent: 80%">80%</div></div>
+                    <p><button class="btn btn-download">Download Resume</button></p>
+                    <hr>
+                    <h4 style="padding: 16px 0;">How much I charge</h4>
+                    <div class="row text-center">
+                        <ul style="list-style-type: none; margin-bottom: 16px;" class="col l-6 c-12 opacity opacity-off">
+                            <li class="bg-black white-text pd-32-16 border-bottom">Basic</li>
+                            <li class="bg-white black-text pd-16 border-bottom">Web Design</li>
+                            <li class="bg-white black-text pd-16 border-bottom">Photography</li>
+                            <li class="bg-white black-text pd-16 border-bottom">5GB Storage</li>
+                            <li class="bg-white black-text pd-16 border-bottom">Mail Support</li>
+                            <li class="bg-white black-text pd-16 border-bottom"><h2>$10</h2><br> <span class="opacity">per month</span></li>
+                            <li class="light-grey black-text pd-16 border-bottom"><button class="btn btn-sign-up">Sign up</button></li>
+                        </ul>
+                        <ul style="list-style-type: none; margin-bottom: 16px;" class="col l-6 c-12 opacity opacity-off">
+                            <li class="bg-black white-text pd-32-16 border-bottom">Pro</li>
+                            <li class="bg-white black-text pd-16 border-bottom">Web Design</li>
+                            <li class="bg-white black-text pd-16 border-bottom">Photography</li>
+                            <li class="bg-white black-text pd-16 border-bottom">5GB Storage</li>
+                            <li class="bg-white black-text pd-16 border-bottom ">Mail Support</li>
+                            <li class="bg-white black-text pd-16 border-bottom"><h2>$25</h2> <br> <span class="opacity">per month</span></li>
+                            <li class="light-grey black-text pd-16 border-bottom"><button class="btn btn-sign-up">Sign up</button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact" class="contact__content">
+            <div class="container">
+                <h4 class="text-center"><b>Contact Me</b></h4>
+                <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+                <form action="">
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required name="name">
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required name="email">
+                    </p>
+                    <p>
+                        <label for="message">Message</label>
+                        <input type="text" id="message" required name="message">
+                    </p>
+                    <p>
+                        <button type="submit" class="btn btn-send-message">Send Message</button>
+                    </p>
+                </form>
+            </div>
+            
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col l-4 c-12">
+                    <h3>INFO</h3>
+                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                </div>
+                <div class="col l-4 c-12">
+                    <h3>BLOG POSTS</h3>
+                    <div class="hover-black pd-16 border-bottom">
+                        <img style="margin-right: 16px;" width="50px" class="left" src="assets/img/workshop.jpg" alt="">
+                        <span style="font-size: 18px;">Lorem</span>
+                        <br>
+                        <span>Sed mattis nunc</span>
+                    </div>
+                    <div class="hover-black pd-16">
+                        <img style="margin-right: 16px;" width="50px" class="left" src="assets/img/gondol.jpg" alt="">
+                        <span style="font-size: 18px;">Ipsum</span>
+                        <br>
+                        <span>Praes tinci sed</span>
+                    </div>
+                </div>
+                <div class="col l-4 c-12">
+                    <h3>POPULAR TAGS</h3>
+                    <span class="tag tag-black">Travel</span>
+                    <span class="tag tag-dark-grey">New York</span>
+                    <span class="tag tag-dark-grey">London</span>
+                    <span class="tag tag-dark-grey">IKEA</span>
+                    <span class="tag tag-dark-grey">NORWAY</span>
+                    <span class="tag tag-dark-grey">DIY</span>
+                    <span class="tag tag-dark-grey">Ideas</span>
+                    <span class="tag tag-dark-grey">Baby</span>
+                    <span class="tag tag-dark-grey">Family</span>
+                    <span class="tag tag-dark-grey">News</span>
+                    <span class="tag tag-dark-grey">Clothing</span>
+                    <span class="tag tag-dark-grey">Shopping</span>
+                    <span class="tag tag-dark-grey">Sports</span>
+                    <span class="tag tag-dark-grey">Games</span>
+                </div>
+            </div>
+        </footer>
+        <div style="padding: 24px 0;" class="bg-black text-center white-text">
+            <p>Powered by <a class="white-text hover-opacity" href="#">w3.css</a></p>
+        </div>
+    </div>
+
+    <div id="modal01"  class="modal__black" onclick="this.style.display='none'">
+        <span style="padding: 8px 16px; font-size: 24px;" class="btn display-topright white-text">×</span>
+        <div class="modal__content animate-zoom">
+            <img width="100%" id="img01" src="assets/img/avatar_hat.jpg" alt="">
+            <p id="caption">Quiet day at the beach. Cold, but beautiful</p>
+        </div>
+    </div>
+
+    <script>
+        function h_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function h_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+        }
+        
+    </script>
+    
+</body>
+</html>

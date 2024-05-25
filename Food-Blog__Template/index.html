@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food-Blog</title>
+    <link rel="stylesheet" href="aseets/css/main.css">
+    <link rel="stylesheet" href="aseets/css/grid.css">
+    <link rel="stylesheet" href="aseets/fontawesome-free-6.4.2-web/css/all.min.css">
+</head>
+<body>
+    <nav id="nav">
+        <a class="fs-24" href="javascript:void(0)" onclick="closemenu ()">Close Menu</a>
+        <a class="fs-24" href="#food" onclick="closemenu ()">Food</a>
+        <a class="fs-24" href="#about" onclick="closemenu ()">About</a>
+
+    </nav>
+
+    <div class="header__top">
+        <div class="grid wide">
+            <div class="row header__container">
+                <div class="menu-btn fs-24 pd-16" onclick="openmenu ()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="fs-24 pd-16">My Food</div>
+                <div class="fs-24 pd-16">Mail</div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="food" class="food__container pd-8-16">
+        <div class="grid wide">
+            <div class="row pd-8-16">
+                <div class="col l-3 c-12 text-center">
+                    <img width="100%" src="aseets/img/sandwich.jpg" alt="sandwich">
+                    <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+                    <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+                <div class="col l-3 c-12 text-center">
+                    <img width="100%" src="aseets/img/steak.jpg" alt="steak">
+                    <h3>Let Me Tell You About This Steak</h3>
+                    <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div><div class="col l-3 c-12 text-center">
+                    <img width="100%" src="aseets/img/cherries.jpg" alt="cherries">
+                    <h3>Cherries, interrupted</h3>
+                    <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                    <p>What else?</p>
+                </div><div class="col l-3 c-12 text-center">
+                    <img width="100%" src="aseets/img/wine.jpg" alt="wine ">
+                    <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+                    <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+            </div>
+            <div class="row pd-8-16">
+                <div class="col l-3 c-12 text-center">
+                    <img width="100%" src="aseets/img/popsicle.jpg" alt="popsicle">
+                    <h3>All I Need Is a Popsicle</h3>
+                    <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+                <div class="col l-3 c-12 text-center">
+                    <img width="100%" src="aseets/img/salmon.jpg" alt="salmon">
+                    <h3>Salmon For Your Skin</h3>
+                    <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div><div class="col l-3 c-12 text-center">
+                    <img width="100%" src="aseets/img/sandwich.jpg" alt="sandwich">
+                    <h3>The Perfect Sandwich, A Real Classic</h3>
+                    <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div><div class="col l-3 c-12 text-center">
+                    <img width="100%" src="aseets/img/croissant.jpg" alt="croissant">
+                    <h3>Le French</h3>
+                    <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+                </div>
+            </div>
+
+            <div class="row pd-tb-32 page__list">
+                <a href="" class="pd-8-16 page__link page__item"><i class="fa-solid fa-angles-left"></i></a></a>
+                <a href="" class="pd-8-16 page__link page__selected">1</a>
+                <a href="" class="pd-8-16 page__link page__item">2</a>
+                <a href="" class="pd-8-16 page__link page__item">3</a>
+                <a href="" class="pd-8-16 page__link page__item">4</a>
+                <a href="" class="pd-8-16 page__link page__item"><i class="fa-solid fa-angles-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="about" class="grid wide about-me text-center pd-32-16">
+        <h3>About Me, The Food Man</h3>
+        <br>
+        <img class="chef-img" src="aseets/img/chef.jpg" alt="chef">
+
+        <div class="pd-tb-32">
+            <h4><b>I am Who I Am!</b></h4>
+            <h6><i>With Passion For Real, Good Food</i></h6>
+            <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="grid wide pd-32-16">
+        <div class="row">
+            <div class="col l-4">
+                <h3>FOOTER</h3>
+                <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                <p>Powered by <a class="black-text" href="#">w3.css</a></p>
+            </div>
+            <div class="col l-4">
+                <h3>BLOG POSTS</h3>
+                <div class="pd-16 border-bottom blog__post-item">
+                    <img style="margin-right: 16px;" class="left" width="50px" src="aseets/img/workshop.jpg" alt="workshop">
+                    <span class="fs-18">Lorem</span>
+                    <br>
+                    <span>Sed mattis nunc</span>
+                </div>
+                <div class="pd-16 blog__post-item">
+                    <img style="margin-right: 16px;" class="left" width="50px" src="aseets/img/gondol.jpg" alt="workshop">
+                    <span class="fs-18">Ipsum</span>
+                    <br>
+                    <span>Praes tinci sed</span>
+                </div>
+            </div>
+            <div class="col l-4">
+                <h3>POPULAR TAGS</h3>
+                <span class="tag-text bg-black mg-b-16">Travel</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">New York</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Dinner</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Salmon</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">France</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Drinks</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Ideas</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Flavors</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Cuisine</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Chicken</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Dressing</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Fried</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Fish</span>
+                <span class="tag-text bg-dark-grey mg-b-16 fs-12">Duck</span>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openmenu () {
+            document.getElementById("nav").style.display = "block";
+        }
+        function closemenu() {
+            document.getElementById("nav").style.display = "none"
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/main.css">
+    <link rel="stylesheet" href="asset/css/grid.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+    <link rel="stylesheet" href="asset/fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+    body {font-family: "Open Sans"}
+    h1,h2,h3,h4,h5,h6 {
+        font-family: "Oswald";
+        font-weight: 400;
+        margin: 10px 0;
+    }
+    
+    h1 {font-size: 36px;} h2{font-size: 30px;} h3 {font-size: 24px;} h4 {font-size: 20px;} h5 {font-size: 18px;} h6 {font-size: 16px;} 
+    p { margin: 15px 0;}
+    .fs-12 {font-size: 12px;} .fs-18 {font-size: 18px;} .fs-24 {font-size: 24px;} .fs-48 {font-size: 48px;} .fs-64 {font-size: 64px;} 
+    </style>
+</head>
+<body>
+    <div class="light-grey">
+        <div id="on-top" class="bg-black">
+            <a href="#" class="social-link"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-snapchat"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-flickr"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link right"><i class="fa fa-search"></i></a>
+        </div>
+        <header id="header" class="black-text text-center">
+            <h1 class="fs-48"><b>JANE BLOGLIFE</b></h1>
+            <h6>Welcome to the blog of <span class="bg-black white-text pd-lr-8">Jane's world</span></h6>
+        </header>
+
+        <div class="grid wide display-container">
+            <img class="main-img" width="1600" height="1060" src="asset/img/jane.jpg" alt="jane-avatar">
+            <div class="wrap__content-inside-img pd-12-24">
+                <h1 class="white-text lt-spc-4">Jane's</h1>
+                <h1 class="white-text fs-64 lt-spc-4"><b class="hidden-on-tablet">FASHION BLOG</b></h1>
+                <h6><button class="pd-12-24 opacity-6 fs-18 subscribe" onclick="document.getElementById('modal-subscribe').style.display='block'">SUBSCRIBE</button></h6>
+            </div>
+        </div>
+        
+
+        <div id="content">
+            <div class="grid wide">
+
+                <div class="row pd-8-16 border">
+                    <div class="col l-8 m-8 c-12">
+                        <div class="mg-16 pd-12-24 bg-white container">
+                            <h3 class="text-center">TITLE HEADING</h3>
+                            <h5 class="text-center">Title description, <span class="opacity-6">May 2, 2016</span></h5>
+                            <div class="justify pd-tb-16">
+                                <img width="100%" src="asset/img/girl_hat.jpg" alt="girl_hat">
+                                <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+                                <p><button class="pd-8-16 hover-popular left border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>                                
+                                <p><button class="pd-8-16 hover-popular right bg-black white-text" onclick="myFunction('demo1')" id="myBtn"><b>Replies</b> <span class="pd-lr-8 bg-white black-text">1</span></button></p>
+                                <p class="clear"></p> 
+
+                                <div id="demo1" style="display: none;">
+                                    <hr>
+                                    <div class="row mg-bt-16">
+                                        <div class="l-2">
+                                            <img width="90px" src="asset/img/avatar_smoke.jpg" alt="avatar_smoke">
+                                        </div>
+                                        <div class="l-10">
+                                            <h4>George <span class="opacity-6">May 3, 2015, 6:32 PM</span></h4>
+                                            <p>Great blog post! Following</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    
+                        </div>
+                        <hr>
+
+                        <div class="mg-16 pd-12-24 bg-white container">
+
+                            <h3 class="text-center">TITLE HEADING</h3>
+                            <h5 class="text-center">Title description, <span class="opacity-6">May 2, 2016</span></h5>
+                            <div class="justify pd-tb-16">
+                                <img width="100%" src="asset/img/man_hat.jpg" alt="man_hat">
+                                <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+                                <p><button class="pd-8-16 hover-popular left border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>                                
+                                <p><button class="pd-8-16 hover-popular right bg-black" onclick="myFunction('demo2')" id="myBtn"><b class="white-text">Replies</b> <span class="pd-lr-8 bg-white black-text">2</span></button></p>
+                                <p class="clear"></p> 
+
+                                <div id="demo2" style="display: none;">
+                                    <hr>
+                                    <div class="row mg-bt-16">
+
+                                        <div class="l-2">
+                                            <img width="90px" src="asset/img/girl_train.jpg" alt="girl_train">
+                                        </div>
+                                        <div class="l-10">
+                                            <h4>Amber <span class="opacity-6">April 26, 2015, 10:52 PM</span></h4>
+                                            <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row mg-bt-16">
+
+                                        <div class="l-2">
+                                            <img width="90px" src="asset/img/girl.jpg" alt="girl">
+                                        </div>
+                                        <div class="l-10">
+                                            <h4>Angie <span class="opacity-6">April 23, 2015, 9:12 PM</span></h4>
+                                            <p>Love hats!!</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr>
+                        <div class="mg-16 pd-12-24 bg-white container">
+                            <h3 class="text-center">TITLE HEADING</h3>
+                            <h5 class="text-center">Title description, <span class="opacity-6">May 2, 2016</span></h5>
+                            <div class="justify pd-tb-16">
+                                <img width="100%" src="asset/img/runway.jpg" alt="runway">
+                                <p><strong>More Hats!</strong> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+                                <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+                                <p><button class="pd-8-16 hover-popular left border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>                                
+                                <p><button class="pd-8-16 hover-popular right bg-black"onclick="myFunction('demo3')" id="myBtn"><b class="white-text">Replies</b> <span class="pd-lr-8 bg-white black-text">3</span></button></p>
+                                <p class="clear"></p> 
+
+                                <div id="demo3" style="display: none;">
+                                    <hr>
+                                    <div class="row mg-bt-16">
+                                        <div class="l-2">
+                                            <img width="90px" src="asset/img/girl_mountain.jpg" alt="girl_mountain">
+                                        </div>
+                                        <div class="l-10">
+                                            <h4>Jane <span class="opacity-6">April 10, 2015, 7:22 PM</span></h4>
+                                            <p>That was a great runway show! Thanks for everything.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mg-bt-16">
+                                        <div class="l-2">
+                                            <img width="90px" src="asset/img/boy.jpg" alt="boy">
+                                        </div>
+                                        <div class="l-10">
+                                            <h4>John <span class="opacity-6">April 8, 2015, 10:32 PM</span></h4>
+                                            <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt..</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mg-bt-16">
+                                        <div class="l-2">
+                                            <img width="90px" src="asset/img/girl_hood.jpg" alt="girl_hood">
+                                        </div>
+                                        <div class="l-10">
+                                            <h4>Anja <span class="opacity-6">April 7, 2015, 9:12 PM</span></h4>
+                                            <p>Cant wait for the runway to start!.</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+
+                    <div class="col l-4 m-4 c-12">
+                        <div class="mg-16 container">
+                            <img width="100%" class="gray-scale" src="asset/img/avatar_girl2.jpg" alt="avatar_girl2">
+                            <div class="pd-lr-16 bg-black white-text container">
+                                <h4>My Name</h4>
+                                <p>Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="mg-16 container">
+                            <div class="pd-8-16 bg-black">
+                                <h4 class="white-text">Popular Posts</h4>
+                            </div>
+                            <ul class="bg-white black-text popular__posts-list">
+                                <li class="pd-16">
+                                    <img class="left mg-r-16" width="50px" src="asset/img/avatar_smoke.jpg" alt="avatar_smoke">
+                                    <span class="fs-18">Denim</span>
+                                    <br>
+                                    <span>Sed mattis nunc</span>    
+                                </li>
+                                <li class="pd-16">
+                                    <img class="left mg-r-16" width="50px" src="asset/img/bandmember.jpg" alt="bandmember">
+                                    <span class="fs-18">Sweaters</span>
+                                    <br>
+                                    <span>Praes tinci sed</span>    
+                                </li>
+                                <li class="pd-16">
+                                    <img class="left mg-r-16" width="50px" src="asset/img/workshop.jpg" alt="workshop">
+                                    <span class="fs-18">Workshop</span>
+                                    <br>
+                                    <span>Ultricies congue</span>    
+                                </li>
+                                <li class="pd-16">
+                                    <img class="left mg-r-16" width="50px" src="asset/img/avatar_smoke.jpg" alt="avatar_smoke">
+                                    <span class="fs-18">Trends</span>
+                                    <br>
+                                    <span>Lorem ipsum dipsum</span>    
+                                </li>
+                            </ul>
+                        </div>
+
+                        <hr>
+
+                        <div class="mg-16 container">
+                            <div class="pd-8-16 bg-black">
+                                <h4 class="white-text">Advertise</h4>
+                            </div>
+                            <div class="bg-white">
+                                <div class="pd-16 display-container">
+                                    <div class="light-grey pd-lr-16 mg-lr-16" style="height: 200px;">
+                                        <span class="display-middle">Your AD Here</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr>
+
+                        <div class="mg-16 container">
+                            <div class="pd-8-16 bg-black">
+                                <h4 class="white-text">Tags</h4>
+                            </div>
+                            <div class="pd-lr-16 bg-white">
+                                <p>
+                                    <span class="tags bg-black white-text mg-bt-16">Fashion</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">New York</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">London</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">Hats</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">Norway</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">Sweaters</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">Ideas</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">Deals</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">Accessories</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">News</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">Clothing</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">Shopping</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">Jeans</span>
+                                    <span class="tags fs-12 light-grey black-text mg-bt-16">Trends</span>
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="mg-16 container">
+                            <div class="pd-8-16 bg-black container">
+                                <h4 class="white-text">Inspiration</h4>
+                            </div>
+                            <div class="pd-lr-16">
+                                <div class="row">
+                                    <div class="l-6 m-6 c-6 pd-lr-8">
+                                        <p>
+                                            <img class="" src="asset/img/jeans.jpg" alt="jeans" width="100%">
+                                        </p>
+                                        <p>
+                                            <img class="" src="asset/img/team1.jpg" alt="team1" width="100%">
+                                        </p>
+
+                                    </div>
+                                    <div class="l-6 m-6 c-6 pd-lr-8">
+                                        <p>
+                                            <img class="gray-scale" src="asset/img/avatar_hat.jpg" alt="avatar_hat" width="100%">
+                                        </p>
+                                        <p>
+                                            <img class="" src="asset/img/team4.jpg" alt="team4" width="100%">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <hr>
+
+                        <div class="mg-16 container">
+                            <div class="pd-8-16 bg-black container">
+                                <h4 class="white-text">Follow Me</h4>
+                            </div>
+                            <div class="pd-8-16 fs-24">
+                                <i class="fa-brands fa-square-facebook hover-opacity"></i>
+                                <i class="fa-brands fa-instagram hover-opacity"></i>
+                                <i class="fa-brands fa-snapchat hover-opacity"></i>
+                                <i class="fa-brands fa-flickr hover-opacity"></i>
+                                <i class="fa-brands fa-twitter hover-opacity"></i>
+                                <i class="fa-brands fa-linkedin-in hover-opacity"></i>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="mg-16 container">
+                            <div class="pd-8-16 bg-black container">
+                                <h4 class="white-text">Subscribe</h4>
+                            </div>
+                            <div class="pd-lr-16 bg-white container">
+                                <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                                <p><input class="input-email" type="email" placeholder="Enter e-mail"></p>
+                                <p><button style="width: 100%;" class="pd-8-16 bg-special white-text hover-popular" onclick="document.getElementById('modal-subscribe').style.display='block'">Subscribe</button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer id="footer">
+            <a href="#" class="pd-12-24 white-text bg-black mg-bt-16 hover-popular"><i class="fa fa-arrow-up mg-r-16 "></i>To the top</a>
+            <p class="white-text">Powered by <a class="white-text" href="#">w3.css</a></p>
+        </footer>
+    
+    </div>
+    
+    <div id="modal-subscribe" class="animate-opacity modal container" style="display: none;">
+        <div class="modal-content container">
+            <i class="fa fa-remove right remove-icon pd-8-16 fs-24 hover-popular" onclick="document.getElementById('modal-subscribe').style.display='none'"></i>
+            <h2 class="lt-spc-4">SUBSCRIBE</h2>
+            <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+            <p><input type="text" class="input-email" placeholder="Enter e-mail"></p>
+            <p><button style="width: 100%;" class="pd-12-24 bg-special white-text hover-popular" onclick="document.getElementById('modal-subscribe').style.display='none'">Subscribe</button></p>
+        </div>  
+    </div>
+
+    <script>
+        function likeFunction (x) {
+            x.style.fontWeight = "bold";
+            x.innerHTML = "&#10003; Liked";
+        }
+
+        document.getElementById("myBtn").click();
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("show") == -1) {
+                x.className += "show";
+            } else {
+                x.className = x.className.replace("show", "");
+            }
+        }
+    </script>
+   
+    
+</body>
+</html>

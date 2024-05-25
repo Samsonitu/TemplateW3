@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .content-selection {
+            width: 98%;
+            margin: 20px auto 20px 0;
+            padding: 16px;
+            background-color: white;
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .product__list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: space-evenly;
+            margin: 0 -8px;
+        }
+
+        .product__items {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 15%;
+        color: rgb(36, 36, 36);
+        border: 1px solid rgb(235, 235, 240);
+        border-radius: 8px;
+        background: rgb(255, 255, 255);
+        overflow: hidden;
+        height: 308px;
+        }
+
+        .product__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 8px;
+        gap: 4px;
+        }
+
+        .product__stamp {
+        min-height: 44px;
+        display: flex;
+        flex-direction: column;
+        }
+
+        .product__name {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        align-self: stretch;
+        overflow: hidden;
+        color: var(--Alias-Primary---On-Theme, #27272a);
+        text-overflow: ellipsis;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 150%;
+        margin: 0px;
+        word-break: break-word
+        }
+
+        .product__rating {
+        height: 12px;
+        font-size: 10px;
+        }
+
+        .product__price {
+        font-size: 16px;
+        line-height: 150%;
+        font-weight: 600;
+        color: rgb(39, 39, 42);
+        display: flex;
+        position: relative;
+        }
+
+        sup {
+        font-size: 75%;
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+        }
+    </style>
+</head>
+<body>
+    <div id="category-details__page">
+        <div class="bread-crump__list">
+            <a href="" class="bread-crump__items"></a>
+            <i>></i>
+        </div>
+
+        <!-- ======= Category Details Sidebar ======= -->
+        <div class="category-details-sidebar__list">
+            <div class="category-details-sidebar__items">
+                <h4>Danh Mục Sản Phẩm</h4>
+                <a href="">English Books</a>
+                <a href="">Sách tiếng Việt</a>
+                <a href="">Văn phòng phẩm</a>
+                <a href="">Quà lưu niệm</a>
+            </div>
+
+            <!-- location__wrapper common -->
+            <div id="location__wrapper">
+                <div class="location-link">
+                    <i class="fa-solid fa-location-dot"></i><span>Giao đến:</span>
+                    <p>
+                        TP. Vũng Tàu, P. Thắng Nhất, Bà Rịa - Vũng tàudsfgsdfgsdgsdfg
+                    </p>
+                    <!-- <div class="modal">
+                        <div id="location-box">
+                            <button id="location-close-btn"></button>
+                            <div id="location-title"></div>
+                            <div id="location-body">
+                                <p id="location-desc"></p>
+                                <button></button>
+                                <div>Hoặc</div>
+                                <div class="location-picker"></div>
+                                <div class="location-picker">
+                                    <div id="location-picker-form">
+                                        <div class="location-option" id="location-city"></div>
+                                        <div class="location-option" id="location-district"></div>
+                                        <div class="location-option" id="location-ward"></div>
+                                    </div>
+                                </div>
+                                <button>Giao đến địa chỉ này</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="category-details-sidebar__items">
+                <h4>Dịch vụ</h4>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span><img src="" alt="">Giao Siêu Tốc 2H</span>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Trả Góp 0%</span>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Giảm sấu</span>
+                </label>
+            </div>
+
+            <div id="" class="category-details-sidebar__items">
+                <h4>Đánh giá</h4>
+                <p>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    từ 5 sao
+                </p>
+                <p>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    từ 4 sao
+                </p>
+                <p>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    từ 3 sao
+                </p>
+            </div>
+
+            <div class="category-details-sidebar__items">
+                <h4>Giá</h4>
+                <span>Dưới 60.000</span>
+                <span>60.000 -> 140.000</span>
+                <span>140.000 -> 280.000</span>
+                <span>Trên 280.000</span>
+                <span>Chọn khoảng giá</span>
+                <div id="input-group">
+                    <input type="text" placeholder="Giá từ">
+                    <span>-</span>
+                    <input type="text" placeholder="Giá đến">
+                </div>
+                <button>Áp dụng</button>
+            </div>
+
+            <div class="category-details-sidebar__items">
+                <h4>Thương hiệu</h4>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Deli</span>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Thiên Long</span>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Hồng Hà</span>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Pental</span>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>MAGIX</span>
+                </label>
+                <a href="">Xem thêm</a>
+            </div>
+
+            <div class="category-details-sidebar__items">
+                <h4>Nhà cung cấp</h4>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Nhà Sách Fahasa</span>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Nhà Sách Vĩnh Thuỵ</span>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Info book</span>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Bamboo Books</span>
+                </label>
+                <label for="">
+                    <input type="checkbox" name="" id="">
+                    <span>Hệ Thống Nhà Sách ABC</span>
+                </label>
+                <a href="">Xem thêm</a>
+            </div>
+
+            <div class="category-details-sidebar__items">
+                <h4>Giao hàng</h4>
+                <label for="">
+                    <input type="radio" name="" id="">
+                    <span>Hàng quốc tế</span>
+                </label>
+                <label for="">
+                    <input type="radio" name="" id="">
+                    <span>Hàng nội địa</span>
+                </label>
+                <a href="">Xem thêm</a>
+            </div>
+
+            <img src="" alt="">
+        </div>
+
+        <div class="category-details__content">
+
+            <h3 class="categroy-details__heading">
+                Nhà sách tiki
+            </h3>
+            <!-- content-selection common -->
+            <div class="content-selection">
+                <!-- ======= Begin Category Details Slide ======= -->
+                <div id="category-details-slide__list">
+                    <div class="category-details-slide__items">
+                        <img src="" alt="">
+                        <div class="category-details-slide__info">
+                            <h2></h2>
+                            <p></p>
+                            <div class="product-row">
+                                <a href=""><img src="" alt=""><span></span></a>
+                                <a href=""><img src="" alt=""><span></span></a>
+                                <a href=""><img src="" alt=""><span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="category-details-slide__items">
+                        <img src="" alt="">
+                        <div class="category-details-slide__info">
+                            <h2></h2>
+                            <p></p>
+                            <div class="product-row">
+                                <a href=""><img src="" alt=""><span></span></a>
+                                <a href=""><img src="" alt=""><span></span></a>
+                                <a href=""><img src="" alt=""><span></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!--End Category Details Slide-->
+    
+                <!-- ======= Begin Category Details Tabs ======= -->
+                <div id="category-details-tab__list">
+                    <div id="category-details-tab-left">
+                        <a href class="category-details-tab__items">
+                            Phổ biến
+                        </a>
+                        <a href class="category-details-tab__items">
+                            Bán chạy
+                        </a>
+                        <a href class="category-details-tab__items">
+                            Hàng mới
+                        </a>
+                        <a href class="category-details-tab__items">
+                            Giá từ thấp đến cao
+                        </a>
+                        <a href class="category-details-tab__items">
+                            Giá từ cao đến thấp
+                        </a>
+                    </div>
+
+                    <div id="category-details-tab-right">
+                        <div class="pagging">
+                            <span class="current"></span>
+                            /
+                            <span class="last"></span>
+                        </div>
+                        <div class="list-arrow">
+                            <i></i>
+                            <i></i>
+                        </div>
+                    </div>
+                </div> <!--End Category Details Tabs-->
+            </div>
+
+            <div class="product__list">
+                <a href="" class="product__items">
+                    <img width="100%" src="asset/img/7best-seller/best-seller-img1.webp" alt="" />
+                    <div class="product__info">
+                        <div class="product__stamp">
+                            <img width="74" height="20" src="asset/img/icon/sticker-like.png" alt="" class="sticker-like" />
+                            <img width="89" height="20" src="asset/img/icon/sticker-genuine.png" alt="" class="sticker-genuine" />
+                        </div>
+                        <div class="product__name">Ổ cắm Điện Quang ECO ĐQ ESK 8ECO (8 Lỗ)</div>
+                        <div class="product__rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="product__price">120.000 <sup style="top: 0.5em;">₫</sup></div>
+                    </div>
+                </a>
+                <a href="" class="product__items">
+                    <img width="100%" src="asset/img/7best-seller/best-seller-img1.webp" alt="" />
+                    <div class="product__info">
+                        <div class="product__stamp">
+                            <img width="74" height="20" src="asset/img/icon/sticker-like.png" alt="" class="sticker-like" />
+                            <img width="89" height="20" src="asset/img/icon/sticker-genuine.png" alt="" class="sticker-genuine" />
+                        </div>
+                        <div class="product__name">Ổ cắm Điện Quang ECO ĐQ ESK 8ECO (8 Lỗ)</div>
+                        <div class="product__rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="product__price">120.000 <sup style="top: 0.5em;">₫</sup></div>
+                    </div>
+                </a>
+                <a href="" class="product__items">
+                    <img width="100%" src="asset/img/7best-seller/best-seller-img1.webp" alt="" />
+                    <div class="product__info">
+                        <div class="product__stamp">
+                            <img width="74" height="20" src="asset/img/icon/sticker-like.png" alt="" class="sticker-like" />
+                            <img width="89" height="20" src="asset/img/icon/sticker-genuine.png" alt="" class="sticker-genuine" />
+                        </div>
+                        <div class="product__name">Ổ cắm Điện Quang ECO ĐQ ESK 8ECO (8 Lỗ)</div>
+                        <div class="product__rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="product__price">120.000 <sup style="top: 0.5em;">₫</sup></div>
+                    </div>
+                </a>
+                <a href="" class="product__items">
+                    <img width="100%" src="asset/img/7best-seller/best-seller-img1.webp" alt="" />
+                    <div class="product__info">
+                        <div class="product__stamp">
+                            <img width="74" height="20" src="asset/img/icon/sticker-like.png" alt="" class="sticker-like" />
+                            <img width="89" height="20" src="asset/img/icon/sticker-genuine.png" alt="" class="sticker-genuine" />
+                        </div>
+                        <div class="product__name">Ổ cắm Điện Quang ECO ĐQ ESK 8ECO (8 Lỗ)</div>
+                        <div class="product__rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="product__price">120.000 <sup style="top: 0.5em;">₫</sup></div>
+                    </div>
+                </a>
+                <a href="" class="product__items">
+                    <img width="100%" src="asset/img/7best-seller/best-seller-img1.webp" alt="" />
+                    <div class="product__info">
+                        <div class="product__stamp">
+                            <img width="74" height="20" src="asset/img/icon/sticker-like.png" alt="" class="sticker-like" />
+                            <img width="89" height="20" src="asset/img/icon/sticker-genuine.png" alt="" class="sticker-genuine" />
+                        </div>
+                        <div class="product__name">Ổ cắm Điện Quang ECO ĐQ ESK 8ECO (8 Lỗ)</div>
+                        <div class="product__rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="product__price">120.000 <sup style="top: 0.5em;">₫</sup></div>
+                    </div>
+                </a>
+                <a href="" class="product__items">
+                    <img width="100%" src="asset/img/7best-seller/best-seller-img1.webp" alt="" />
+                    <div class="product__info">
+                        <div class="product__stamp">
+                            <img width="74" height="20" src="asset/img/icon/sticker-like.png" alt="" class="sticker-like" />
+                            <img width="89" height="20" src="asset/img/icon/sticker-genuine.png" alt="" class="sticker-genuine" />
+                        </div>
+                        <div class="product__name">Ổ cắm Điện Quang ECO ĐQ ESK 8ECO (8 Lỗ)</div>
+                        <div class="product__rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="product__price">120.000 <sup style="top: 0.5em;">₫</sup></div>
+                    </div>
+                </a>
+                
+                
+            </div>
+
+            <ul class="category-details-pagination">
+                <li><a href=""><i></i></a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">...</a></li>
+                <li><a href="">50</a></li>
+                <li><a href=""><i></i></a></li>
+            </ul>
+        </div>
+
+        <div class="content-selection">
+            <h3 class="categroy-details__heading">
+                sản phẩm đã xem
+            </h3>
+            <div class="product__list">
+                <a href="" class="product__items">
+                    <img width="100%" src="asset/img/7best-seller/best-seller-img1.webp" alt="" />
+                    <div class="product__info">
+                        <div class="product__stamp">
+                            <img width="74" height="20" src="asset/img/icon/sticker-like.png" alt="" class="sticker-like" />
+                            <img width="89" height="20" src="asset/img/icon/sticker-genuine.png" alt="" class="sticker-genuine" />
+                        </div>
+                        <div class="product__name">Ổ cắm Điện Quang ECO ĐQ ESK 8ECO (8 Lỗ)</div>
+                        <div class="product__rating">
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        </div>
+                        <div class="product__price">120.000 <sup style="top: 0.5em;">₫</sup></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

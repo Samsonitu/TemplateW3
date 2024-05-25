@@ -1,0 +1,19 @@
+@media (max-width: 1439px) {
+    #header, 
+    #main {
+        max-width: 1280px;
+    }
+    
+}
+
+@media (min-width: 1440px) and (max-width: 1455px) {
+    #main {
+        margin-right: -15px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .flash-sale__items  {
+        flex: 0 0 171px;
+    }
+}
